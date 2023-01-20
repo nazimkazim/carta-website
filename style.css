@@ -1,0 +1,682 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-mobile, .menu-btn {
+    display: none;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 300px;
+    background-color: #ffffff;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    width: 100%;
+  }
+  
+  .menu-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1116px;
+    height: 100%;
+  }
+  
+  .menu-holder .logo {
+    width: 97px;
+    height: 41px;
+  }
+  
+  .menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 597px;
+    height: 100%;
+  }
+  
+  .menu-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 228px;
+    height: 100%;
+  }
+  
+  .menu-action .transparent-btn,
+  .hero-center-btns .transparent-btn,
+  .builders-section-item .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 49px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 18px;
+    font-size: 15px;
+  }
+  
+  .builders-section-item .btn-container img {
+    width: 23px;
+    margin-left: 5px;
+  }
+  
+  .builders-section-item .btn-container {
+    font-family: Plus Jakarta Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .menu-action .demo-btn,
+  .hero-center-btns .demo-btn,
+  .equity-management-half .demo-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 159px;
+    height: 48px;
+    background-color: #000000;
+    border-radius: 100px;
+    color: white;
+    box-shadow: 0px 0px 0px #000000;
+    cursor: pointer;
+  }
+  
+  .equity-management-half .demo-btn img {
+    width: 23px;
+  }
+  
+  .equity-management-half .learn-more-btn {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu-item {
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    width: 100px;
+    height: 20px;
+  }
+  
+  .menu-item p {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .menu-item img {
+    width: 16px;
+    height: 6px;
+    margin-left: 10px;
+  }
+  
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    width: 1116px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 105px;
+  }
+  
+  .hero-left,
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 424px;
+    width: 261px;
+  }
+  
+  .hero-right {
+    align-items: flex-end;
+  }
+  
+  .hero-left .man,
+  .hero-right .man {
+    width: 100%;
+    height: 147px;
+    object-fit: fill;
+  }
+  
+  .hero-left .woman,
+  .hero-right .woman {
+    width: 190px;
+    height: 253px;
+  }
+  
+  .hero-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-center h1 {
+    width: 430px;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 55px;
+    text-align: center;
+  }
+  
+  .hero-center p {
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 424px;
+  }
+  
+  .hero-center-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 46px;
+    width: 317px;
+    height: 48px;
+  }
+  
+  .generation-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .generation-section h1 {
+    font-family: Roboto;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .equity-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 93px;
+    width: 388px;
+    border-radius: 0px;
+    border: 3px solid black;
+    margin-top: 55px;
+  }
+  
+  .equity-numbers p {
+    font-family: Plus Jakarta Sans;
+    font-size: 69px;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .equity-owners {
+    width: 107px;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .indicators-section {
+    display: flex;
+    justify-content: space-between;
+    width: 662px;
+    min-height: 120px;
+    margin-top: 46px;
+  }
+  
+  .indicators-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100%;
+  }
+  
+  .indicators-item .indicators-number,
+  .indicators-item .indicators-text {
+    text-align: center;
+  }
+  
+  .indicators-item .indicators-number {
+    font-family: Plus Jakarta Sans;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .indicators-item .indicators-text {
+    font-family: Plus Jakarta Sans;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .logos-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 158px;
+    width: 990px;
+    height: 150px;
+  }
+  
+  .logos-section img {
+    width: 145px;
+  }
+  
+  .support-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e2eef3;
+    margin: 119px auto;
+    width: 1116px;
+    height: auto;
+  }
+  .support-section h1 {
+    font-family: Roboto;
+    width: 528px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 74px;
+  }
+  
+  .support-buttons-container {
+    display: flex;
+    margin: 70px auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 906px;
+    height: 88px;
+    background: #ffffff;
+    border-radius: 100px;
+  }
+  .support-buttons-container .support-button {
+    cursor: pointer;
+    height: 48px;
+    width: 186px;
+    border-radius: 100px;
+    background: transparent;
+    border: none;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .support-buttons-container .support-button:hover {
+    background: #e2eef3;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 0px #8f8f8f;
+  }
+  
+  .equity-management-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px auto;
+    width: 906px;
+  }
+  
+  .equity-management-container img {
+    width: 441px;
+  }
+  
+  .equity-management-half {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .equity-management-half h1 {
+    width: 265px;
+    font-family: Plus Jakarta Sans;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .equity-management-half p {
+    width: 342px;
+    font-family: Plus Jakarta Sans;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .builders-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .builders-section h1 {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .builders-section p {
+    width: 541px;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .builders-section-people {
+    display: flex;
+    flex-direction: column;
+    margin: 78px auto;
+    width: 906px;
+  }
+  
+  .builders-section-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 142px;
+    margin-bottom: 10px;
+  }
+  
+  .description h2 {
+    font-family: Plus Jakarta Sans;
+    font-size: 27px;
+    margin: 0;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .description p {
+    width: 447px;
+    font-family: Plus Jakarta Sans;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .focus-on-future-section {
+    display: flex;
+    width: 926px;
+    margin: 194px auto;
+    min-height: 532px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .focus-on-future-section h2 {
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .focus-on-future-section p {
+    width: 781px;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .carta-total-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carta-total-half {
+    flex: 1;
+    height: 100%;
+  }
+  .carta-total-half p {
+    width: 332px;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .carta-total-half h2 {
+    width: 345px;
+    font-family: Plus Jakarta Sans;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .carta-total-half.right {
+    text-align: right;
+  }
+  
+  .ceo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 260px auto;
+    height: 421px;
+    width: 760px;
+    border-radius: 0px;
+    background: #e2eef3;
+  }
+  
+  .ceo-section h3 {
+    width: 584px;
+    margin-top: 38px;
+    margin-bottom: 47px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .ceo-section h4 {
+    font-family: Plus Jakarta Sans;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .ceo-section .title {
+    font-family: Plus Jakarta Sans;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .ceo-section p {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .cta-section {
+    display: flex;
+    margin: 190px auto;
+    flex-direction: column;
+    width: 1116px;
+    height: 364px;
+    background: #000000;
+    align-items: center;
+  }
+  
+  .cta-section h1 {
+    width: 730px;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fbf9f5;
+    margin-top: 72px;
+    margin-bottom: 48px;
+  }
+  
+  .cta-section .btns-container {
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    height: 50px;
+    width: 450px;
+    gap: 5px;
+  }
+  
+  .cta-section .btns-container button {
+    flex: 1;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    min-height: 300px;
+    background: black;
+  }
+  
+  .footer-part {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 86px;
+  }
+  
+  .footer-part h1 {
+    font-family: Plus Jakarta Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin-top: 38px;
+  }
+  
+  .footer-part a {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration:none;
+    color:#FFFFFF;
+    margin-bottom: 15px;
+  }
+  
+  .footer-part a:hover {
+    text-decoration:underline;
+  }
+  
+  .footer-part-container {
+    display:flex;
+    width: 100%;
+  }
+  
+  .footer-section-icons {
+    display: flex;
+    max-width: 100%;
+    height:124px;
+    padding:20px;
+  }
+  
+  .left-icons {
+    display:flex;
+    flex:1;
+    height:100%;
+    align-items:center;
+    justify-content:flex-start;
+    gap:8px;
+  }
+  
+  .right-icons {
+    display: flex;
+    flex:1;
+    height:100%;
+    align-items:center;
+    justify-content:flex-end;
+    gap:16px;
+  }
+  
+  .footer-section-hr {
+    margin-bottom:30px;
+    width:1000px;
+    margin:30px auto;
+  }
+  

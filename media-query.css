@@ -1,0 +1,322 @@
+@media only screen and (max-width: 414px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header-mobile {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        background: rgb(192, 183, 183);
+        padding: 20px;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    .header-mobile.open {
+        left: 0;
+    }
+
+    .header-mobile a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .menu-btn {
+        display: flex;
+        position: absolute;
+        background: transparent;
+        z-index: 2;
+        border: none;
+        cursor: pointer;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 10px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .header {
+        display: none;
+    }
+
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-section .hero-center-btns {
+        margin-bottom: 50px;
+    }
+
+    .hero-left,
+    .hero-right,
+    .hero-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 10px;
+    }
+
+    .hero-center {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .hero-center h1 {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .hero-center p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .hero-left .woman,
+    .hero-right .woman {
+        width: 60%;
+    }
+
+    .hero-left .man,
+    .hero-right .man {
+        width: 60%;
+    }
+
+    .generation-section .indicators-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .generation-section .logos-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .support-section {
+        display: flex;
+        width: 100%;
+    }
+
+    .support-section h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .support-section .support-buttons-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .support-section .equity-management-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .support-section .equity-management-container .equity-management-half {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .equity-management-half h1 {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .equity-management-half p {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .equity-management-half .learn-more-btn {
+        margin-bottom: 20px;
+    }
+
+    .equity-management-half img {
+        width: 100%;
+    }
+
+    .builders-section {
+        display: flex;
+        width: 100%;
+    }
+
+    .builders-section h1 {
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .builders-section p {
+        width: 100%;
+    }
+
+    .builders-section-people {
+        width: 100%;
+    }
+
+    .builders-section-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .builders-section-item img {
+        width: 100%;
+    }
+
+    .builders-section-item .description {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .focus-on-future-section {
+        margin-top: 30px;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .focus-on-future-section h2 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .focus-on-future-section p {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .focus-on-future-section .carta-total-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .carta-total-section .carta-total-half {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .carta-total-section .carta-total-half h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .carta-total-section .carta-total-half p {
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .focus-on-future-section .carta-total-section img {
+        width: 100%;
+    }
+
+    .ceo-section {
+        padding: 10px;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .ceo-section h3 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .cta-section {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .cta-section h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .cta-section .btns-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cta-section .btns-container button {
+        width: 80%;
+    }
+
+    .footer-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .footer-section .footer-part-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-section .footer-section-icons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-section .footer-section-icons .left-icons,
+    .footer-section .footer-section-icons .right-icons {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .footer-section-hr {
+        width: 80%;
+    }
+}
